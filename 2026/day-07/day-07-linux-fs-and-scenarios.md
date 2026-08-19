@@ -85,7 +85,7 @@ Why: Verify it worked. Look for: -rwxr-xr-x (notice 'x' = executable).
 
 Step 4: `./hello.sh`
 Why: Run it. 
-![snapshot](/images/filepermission.png)
+![snapshot](/Images/filepermission.png)
 
 
 
