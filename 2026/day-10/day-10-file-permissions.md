@@ -8,9 +8,9 @@
 
 `vim script.sh` - with content echo "Hello Devops".
 
-![snapshot](Images/task1.png) 
+![snapshot](Images/task1a.png) 
 
-![snapshot](Images/task2.png) 
+![snapshot](Images/task1b.png) 
 
 ## Task 2: Read files
 
