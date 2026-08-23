@@ -65,7 +65,7 @@
 
 ## Task 6: Practice Challenge
 
-[snapshot](Images/task6.png)
+![snapshot](Images/task6.png)
 
 ## COMMANDS USED:
 
