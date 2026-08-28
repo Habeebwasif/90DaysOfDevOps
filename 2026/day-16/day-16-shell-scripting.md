@@ -7,7 +7,7 @@
 3. Print `Hello, DevOps!` using `echo`
 4. Make it executable and run it
 
-[View my script file:](Scripts/hello.sh)
+[View my script file](Scripts/hello.sh)
 
 * What happens if you remove the shebang line?
 
@@ -25,7 +25,7 @@ interpreting the file.
  * Using double quote `" "` - The variables and commands are evaluated.
  * Using single quote `' '` - Everything inside is taken literally, no evaluation happens.
 
-[View my script file:](Scripts/variables.sh)
+[View my script file](Scripts/variables.sh)
 
 ### Try using single quotes vs double quotes — what's the difference?
 
@@ -38,7 +38,7 @@ interpreting the file.
   - Asks for their favourite tool
   - Prints: Hello <name>, your favourite tool is <tool>
 
-[View my script file:](Scripts/greet.sh)
+[View my script file](Scripts/greet.sh)
 
 ![snapshot](Images/greet.png)
 
@@ -48,7 +48,7 @@ interpreting the file.
    - Takes a number using `read`
    - Prints whether it is **positive**, **negative**, or **zero**
 
-[View my script file:](Scripts/check_number.sh)
+[View my script file](Scripts/check_number.sh)
 
 ![snapshot](Images/checknumber.png)
 
@@ -57,7 +57,7 @@ interpreting the file.
    - Checks if the file **exists** using `-f`
    - Prints appropriate message.
 
-[View my script file:](Scripts/file_check.sh)
+[View my script file](Scripts/file_check.sh)
 
 ![snapshot](Images/filecheck.png)
 
@@ -68,7 +68,7 @@ Create `server_check.sh` that:
 3. If `y` — runs `systemctl status <service>` and prints whether it's **active** or **not**
 4. If `n` — prints "Skipped."
 
-[View my script file:](Scripts/server_check.sh)
+[View my script file](Scripts/server_check.sh)
 
 ![snapshot](Images/servercheck1.png)
 
