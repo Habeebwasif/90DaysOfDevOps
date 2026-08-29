@@ -66,7 +66,7 @@
   
 [View my script](Scripts/safe_script.sh)
 
-![snapshot](Images/safe_script.png)
+![snapshot](Images/safescript.png)
 
 2. Modify your `install_packages.sh` to check if the script is being run as root — exit with a message if not.
 
