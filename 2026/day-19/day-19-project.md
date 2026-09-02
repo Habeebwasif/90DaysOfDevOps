@@ -49,6 +49,6 @@ Create `maintenance.sh` that:
 3. Logs all output to `/var/log/maintenance.log` with timestamps
 4. Write the cron entry to run it daily at 1 AM : `0 1 * * *`
 
-[Here is the script maintenance.sh](Scripts/maintenance.sh)
+[View my Script](Scripts/maintenance.sh)
    
 ![snapshot](Images/maintenance.png)
