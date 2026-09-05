@@ -1,0 +1,23 @@
+Date of analysis : 2026-09-05 Time : 11:41
+Log file Name : sample.log
+
+ TOTAL LINES PROCESSED
+82
+TOTAL ERROR COUNT:
+24
+
+ TOP 5 ERROR MESSAGES:
+      8    Database connection
+      3    Authentication
+      3    API request
+      2    Service response
+      2    Permission denied while accessing
+
+ CRITICAL MESSAGES:
+5:2026-09-05 10:18:10 CRITICAL Database server is unreachable
+9:2026-09-05 10:22:10 CRITICAL Application shutting down
+31:2026-09-05 08:13:15 CRITICAL Database server is unreachable
+32:2026-09-05 08:13:20 CRITICAL Database service stopped unexpectedly
+53:2026-09-05 08:26:00 CRITICAL Backup service is unavailable
+67:2026-09-05 08:38:00 CRITICAL Network interface is down
+76:2026-09-05 08:45:00 CRITICAL Application service is not responding
