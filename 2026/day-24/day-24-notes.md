@@ -77,7 +77,6 @@ Answer: Use rebase for a clean linear history on private/local work and
 2. Merge it into `main` using `--squash` — what happens?
 
 ![snapshot](Images/img4.png)
-
 ![snapshot](Images/img11.png)
     
 3. Check `git log` — how many commits were added to `main`?
