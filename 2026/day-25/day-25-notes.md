@@ -107,7 +107,7 @@ I'd use revert for pushed/shared commits and reset when the commits are not nece
 
 1.GitFlow:
 
-![snapshot](Images/img8.png)
+![snapshot](Images/imgfix.png)
 
 ```bash
 How it works:
