@@ -149,6 +149,8 @@ where you want to ship to production frequently and simply
 
 ![snapshot](Images/img10.png)
 
+```bash
+
 How it works: 
 Everyone commits directly (or via very short-lived branches, often less than a day)
 to a single shared trunk/main, 
@@ -159,6 +161,8 @@ High-velocity teams practicing continuous integration/deployment, often paired w
 
 Pros: Minimal merge conflicts and fast, truly continuous integration since branches barely exist.
 Cons: It demands strong automated testing and feature-flag discipline, or broken code lands straight on trunk.
+
+```
 
 4.Answer:
 
