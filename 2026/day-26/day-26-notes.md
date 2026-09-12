@@ -28,7 +28,7 @@ Q. What authentication methods does `gh` support?
 ![snapshot](Images/img2.png)
 
 ![snapshot](Images/img3.png)
-    
+
 ![snapshot](Images/img4.png)
 
 ---
@@ -64,9 +64,9 @@ gh issue delete 1                                                # Delete
 3. View the details of your PR — check its status, reviewers, and checks
 4. Merge your PR from the terminal
 
-![snapshot](Images/img5.png)
-
 ![snapshot](Images/img6.png)
+
+![snapshot](Images/img7.png)
 
 5. Answer in your notes:
 
@@ -109,7 +109,7 @@ enable, or disable GitHub Actions workflows.
 Together, they help automate and manage testing, builds, and deployments from the terminal.
 ```
 
-![snapshot](Images/img7.png)
+![snapshot](Images/img8.png)
 
 
 
