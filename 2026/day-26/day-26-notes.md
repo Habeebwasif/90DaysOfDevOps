@@ -13,7 +13,7 @@ Q. What authentication methods does `gh` support?
 - Web based browser loginn & personal access token
 
 ```
-![snapshot](Images/img1.png)
+![snapshot](Images/img2.png)
 
 ---
 
@@ -25,7 +25,7 @@ Q. What authentication methods does `gh` support?
 5. Open a repo in your browser directly from the terminal
 6. Delete the test repo you created (be careful!)
 
-![snapshot](Images/img2.png)
+![snapshot](Images/img1.png)
 
 ![snapshot](Images/img3.png)
 
