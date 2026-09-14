@@ -59,5 +59,7 @@ Before making changes, assess where you stand:
     
 - After
 
-![snapshot](Images/after.png)
+![snapshot](Images/after1.png)
+  
+![snapshot](Images/after2.png)
   
