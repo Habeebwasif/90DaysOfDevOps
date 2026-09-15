@@ -30,7 +30,7 @@ Go through the checklist below. For each item, mark yourself honestly:
 
 #### Linux
 - [x] Navigate the file system, create/move/delete files and directories
-- [ ] Manage processes — list, kill, background/foreground
+- [x] Manage processes — list, kill, background/foreground
 - [ ] Work with systemd — start, stop, enable, check status of services
 - [ ] Read and edit text files using vi/vim or nano
 - [ ] Troubleshoot CPU, memory, and disk issues using top, free, df, du
