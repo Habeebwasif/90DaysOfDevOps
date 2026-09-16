@@ -34,10 +34,10 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Work with systemd — start, stop, enable, check status of services
 - [x] Read and edit text files using vi/vim or nano
 - [x] Troubleshoot CPU, memory, and disk issues using top, free, df, du
-- [ ] Explain the Linux file system hierarchy (/, /etc, /var, /home, /tmp, etc.)
-- [ ] Create users and groups, manage passwords
-- [ ] Set file permissions using chmod (numeric and symbolic)
-- [ ] Change file ownership with chown and chgrp
-- [ ] Create and manage LVM volumes
+- [x] Explain the Linux file system hierarchy (/, /etc, /var, /home, /tmp, etc.)
+- [x] Create users and groups, manage passwords
+- [x] Set file permissions using chmod (numeric and symbolic)
+- [x] Change file ownership with chown and chgrp
+- [x] Create and manage LVM volumes
 - [ ] Check network connectivity — ping, curl, netstat, ss, dig, nslookup
 - [ ] Explain DNS resolution, IP addressing, subnets, and common ports
