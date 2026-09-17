@@ -39,5 +39,5 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Set file permissions using chmod (numeric and symbolic)
 - [x] Change file ownership with chown and chgrp
 - [x] Create and manage LVM volumes
-- [ ] Check network connectivity — ping, curl, netstat, ss, dig, nslookup
+- [x] Check network connectivity — ping, curl, netstat, ss, dig, nslookup
 - [ ] Explain DNS resolution, IP addressing, subnets, and common ports
