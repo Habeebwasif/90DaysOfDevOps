@@ -40,4 +40,13 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Change file ownership with chown and chgrp
 - [x] Create and manage LVM volumes
 - [x] Check network connectivity — ping, curl, netstat, ss, dig, nslookup
-- [ ] Explain DNS resolution, IP addressing, subnets, and common ports
+- [x] Explain DNS resolution, IP addressing, subnets, and common ports
+
+#### Shell Scripting
+- [ ] Write a script with variables, arguments, and user input
+- [ ] Use if/elif/else and case statements
+- [ ] Write for, while, and until loops
+- [ ] Define and call functions with arguments and return values
+- [ ] Use grep, awk, sed, sort, uniq for text processing
+- [ ] Handle errors with set -e, set -u, set -o pipefail, trap
+- [ ] Schedule scripts with crontab
