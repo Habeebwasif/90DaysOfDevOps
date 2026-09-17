@@ -43,9 +43,9 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Explain DNS resolution, IP addressing, subnets, and common ports
 
 #### Shell Scripting
-- [ ] Write a script with variables, arguments, and user input
-- [ ] Use if/elif/else and case statements
-- [ ] Write for, while, and until loops
+- [x] Write a script with variables, arguments, and user input
+- [x] Use if/elif/else and case statements
+- [x] Write for, while, and until loops
 - [ ] Define and call functions with arguments and return values
 - [ ] Use grep, awk, sed, sort, uniq for text processing
 - [ ] Handle errors with set -e, set -u, set -o pipefail, trap
