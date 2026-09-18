@@ -56,7 +56,7 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Create and switch branches
 - [x] Push to and pull from GitHub
 - [x] Explain clone vs fork
-- [ ] Merge branches — understand fast-forward vs merge commit
+- [x] Merge branches — understand fast-forward vs merge commit
 - [ ] Rebase a branch and explain when to use it vs merge
 - [ ] Use git stash and git stash pop
 - [ ] Cherry-pick a commit from another branch
