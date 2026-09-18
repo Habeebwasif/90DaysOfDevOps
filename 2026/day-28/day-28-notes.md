@@ -46,7 +46,7 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Write a script with variables, arguments, and user input
 - [x] Use if/elif/else and case statements
 - [x] Write for, while, and until loops
-- [ ] Define and call functions with arguments and return values
-- [ ] Use grep, awk, sed, sort, uniq for text processing
-- [ ] Handle errors with set -e, set -u, set -o pipefail, trap
-- [ ] Schedule scripts with crontab
+- [x] Define and call functions with arguments and return values
+- [x] Use grep, awk, sed, sort, uniq for text processing
+- [x] Handle errors with set -e, set -u, set -o pipefail, trap
+- [x] Schedule scripts with crontab
