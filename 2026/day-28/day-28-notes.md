@@ -50,3 +50,17 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Use grep, awk, sed, sort, uniq for text processing
 - [x] Handle errors with set -e, set -u, set -o pipefail, trap
 - [x] Schedule scripts with crontab
+
+#### Git & GitHub
+- [x] Initialize a repo, stage, commit, and view history
+- [x] Create and switch branches
+- [x] Push to and pull from GitHub
+- [x] Explain clone vs fork
+- [ ] Merge branches — understand fast-forward vs merge commit
+- [ ] Rebase a branch and explain when to use it vs merge
+- [ ] Use git stash and git stash pop
+- [ ] Cherry-pick a commit from another branch
+- [ ] Explain squash merge vs regular merge
+- [ ] Use git reset (soft, mixed, hard) and git revert
+- [ ] Explain GitFlow, GitHub Flow, and Trunk-Based Development
+- [ ] Use GitHub CLI to create repos, PRs, and issues
