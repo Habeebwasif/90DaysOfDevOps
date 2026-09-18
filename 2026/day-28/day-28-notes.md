@@ -59,8 +59,8 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [x] Merge branches — understand fast-forward vs merge commit
 - [x] Rebase a branch and explain when to use it vs merge
 - [x] Use git stash and git stash pop
-- [ ] Cherry-pick a commit from another branch
-- [ ] Explain squash merge vs regular merge
-- [ ] Use git reset (soft, mixed, hard) and git revert
-- [ ] Explain GitFlow, GitHub Flow, and Trunk-Based Development
-- [ ] Use GitHub CLI to create repos, PRs, and issues
+- [x] Cherry-pick a commit from another branch
+- [x] Explain squash merge vs regular merge
+- [x] Use git reset (soft, mixed, hard) and git revert
+- [x] Explain GitFlow, GitHub Flow, and Trunk-Based Development
+- [x] Use GitHub CLI to create repos, PRs, and issues
