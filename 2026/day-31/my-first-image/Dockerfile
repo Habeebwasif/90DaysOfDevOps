@@ -4,4 +4,5 @@ RUN apt-get update && apt-get install curl -y
 
 CMD ["echo", "Hello from my custom image!"]
 
+#for demo
 #ENTRYPOINT ["echo","hi,habeeb"]
