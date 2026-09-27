@@ -161,13 +161,27 @@ same room, and confirming real-time messaging worked end-to-end.
 
 4. Verify the app container can reach the database by container name
 
-![snapshot](Images/img15.png)
+```bash
+node -e "require('net').createConnection(3306, 'mysql-db').on('connect', () => console.log('connected')).on('error',
+(e) => console.log('failed:', e.message))"
+```
+What it does:
 
+```text
+-> This one-line Node.js script uses the built-in net module to open a raw TCP connection to mysql-db on port 3306 (MySQL's default port).
+
+-> It prints connected on success or failed: with the error on failure. Since it targets the container by name rather than IP.
+
+-> A successful connection confirms both containers share the same Docker network with working name resolution.
+
+```
 Output:
 
 ```text
 Connected!
 ```
+
+![snapshot](Images/img15.png)
 
 Explanation:
 
