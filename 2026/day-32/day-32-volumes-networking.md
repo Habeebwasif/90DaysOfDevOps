@@ -27,9 +27,11 @@ Explanation:
 5. Is the data still there?
 
 Before attaching volume:
+
 ![snapshot](Images/img3.png)
 
 Attaching the volume:
+
 ![snapshot](Images/img4.png)
 
 ![snapshot](Images/img5.png)
