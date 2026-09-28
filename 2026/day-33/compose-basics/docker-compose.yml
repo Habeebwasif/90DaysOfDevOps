@@ -1,0 +1,6 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-cont
+    ports:
+      - "8080:80"
