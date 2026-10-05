@@ -1,13 +1,25 @@
 # phasee1 - install dependencies
 FROM node:20-alpine AS builder
+
 WORKDIR /app
+
 COPY package*.json ./
+
+# installing only the packages needed to run the application
 RUN npm ci --omit=dev
+
+# copying application file into /app
 COPY server.js .
 
-# phase2 - minimal runtime
+# phase2 
+# using distroless nodejs image
 FROM gcr.io/distroless/nodejs20-debian12
+
 WORKDIR /app
+
+# copying only required application files into /app
 COPY --from=builder /app /app
+
 EXPOSE 8080
+
 CMD ["server.js"]
