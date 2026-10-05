@@ -1,0 +1,35 @@
+# Using a specific Node version with Alpine Linux
+FROM node:22.12.0-alpine3.20 AS builder
+
+#working directory
+WORKDIR /app
+
+# first copying files and then install dependencies
+COPY package*.json ./
+RUN npm ci
+
+# copy source to /app/dist
+COPY . .
+RUN npm run build
+
+# --------------Building phase complete-----------
+
+# using smallest nginx image possible
+FROM nginx:1.27-alpine
+
+# creating a user & grp called "app" ( nginx to run without root privileges)
+# changing nginx port 80 to 8080 bcoz a non-root user cannot use ports below 1024.
+# creating a nginx process file and giving "app" user permission to use files
+
+RUN addgroup -S app && adduser -S app -G app \
+    && sed -i 's/listen  *80;/listen 8080;/; s/listen  *\[::\]:80;/listen [::]:8080;/' /etc/nginx/conf.d/default.conf \
+    && touch /var/run/nginx.pid \
+    && chown -R app:app /var/run/nginx.pid /var/cache/nginx /var/log/nginx /etc/nginx/conf.d
+
+# copying only finished files into the image not dpnedncies
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# run nginx as non-root user
+USER app
+
+EXPOSE 8080
