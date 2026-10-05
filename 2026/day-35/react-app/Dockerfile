@@ -13,7 +13,7 @@ RUN npm install
 # builds react app
 RUN npm run build
 
-# installing a server for showing of files
+# installing a server for serving files
 RUN npm install -g serve
 
 # react server start on port 3000
