@@ -26,7 +26,7 @@ RUN addgroup -S app && adduser -S app -G app \
     && touch /var/run/nginx.pid \
     && chown -R app:app /var/run/nginx.pid /var/cache/nginx /var/log/nginx /etc/nginx/conf.d
 
-# copying only finished files into the image not dpnedncies
+# copying only finished files into the image not depndencies
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # run nginx as non-root user
