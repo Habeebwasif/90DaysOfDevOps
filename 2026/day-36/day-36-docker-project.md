@@ -14,6 +14,8 @@ I chose a notes application because it demonstrates a complete multi-container a
 
 The application allows users to view, add, and delete notes. The backend also provides a health endpoint that checks the database connection.
 
+![snapshot](Images/img3)
+
 ## 2. Application architecture
 
 ```text
@@ -60,11 +62,15 @@ Check the services:
 docker compose ps
 ```
 
+![snapshot](Images/img2)
+
 Open the UI:
 
 ```text
-http://localhost:8080
+http://52.53.170.30:8080
 ```
+
+![snapshot](Images/img1)
 
 ## 6. Environment variables
 
@@ -147,6 +153,8 @@ Measured from the local Docker image listing:
 
 The MySQL image is pulled separately from the official `mysql:8.0` image and is not part of the application images.
 
+![snapshot](Images/img5)
+
 ## 9. Docker Hub links
 
 Backend image:
@@ -161,6 +169,8 @@ Frontend image:
 https://hub.docker.com/r/habeebwasif/notes-frontend
 ```
 
+![snapshot](Images/img4)
+
 ## 10. Useful commands
 
 Pull and start the published images:
@@ -168,6 +178,8 @@ Pull and start the published images:
 ```bash
 docker compose up --pull always -d
 ```
+
+![snapshot](Images/img6)
 
 View service status:
 
