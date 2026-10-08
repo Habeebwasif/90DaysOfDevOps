@@ -67,7 +67,7 @@ docker compose ps
 Open the UI:
 
 ```text
-http://52.53.170.30:8080
+http://localhost:8080 # replaced with my host ip
 ```
 
 ![snapshot](Images/img1.png)
