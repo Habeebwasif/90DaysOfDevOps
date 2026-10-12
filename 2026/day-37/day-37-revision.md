@@ -20,3 +20,58 @@ Mark yourself honestly — **can do**, **shaky**, or **haven't done**:
 - [x] Configure health checks and service dependencies
 
 ---
+
+## Docker Quick-Fire Questions
+
+### 1. What is the difference between an image and a container?
+
+`Image` - An image is an immutable(read-only) template which is used to create containers.
+
+`Container` - a container is an instance created from an image
+
+---
+
+### 2. What happens to data inside a container when you remove it?
+
+if the container is removed, the `Data` inside the container’s writable layer gets deleted. (unless, a volume attached for data persistence)
+
+---
+
+### 3. How do two containers on the same custom network communicate?
+
+`Containers` communicate through `Docker’s internal DNS` using container or service names.
+
+---
+
+### 4. What does `docker compose down -v` do differently from `docker compose down`?
+
+* `docker compose down` removes containers and networks but keeps volumes.
+* whereas, `docker compose down -v` also deletes the volumes (and their data).
+
+### 5. Why are multi-stage builds useful?
+
+They separate the build tools from runtime files, producing smaller and cleaner final images.
+
+---
+
+### 6. What is the difference between `COPY` and `ADD`?
+
+* `COPY` copies local files
+
+* while `ADD` supports url and extract tar archives automaticlly.
+
+---
+
+### 7. What does `-p 8080:80` mean?
+
+It maps `host port 8080` (i.e ur computer) to `container port 80` (port inside the containerr)
+
+---
+
+### 8. How do you check how much disk space Docker is using?
+
+```text
+docker system df
+```
+
+It helps us view info of image, container, volume, and build-cache usage.
