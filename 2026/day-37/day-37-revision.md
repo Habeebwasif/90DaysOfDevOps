@@ -92,3 +92,35 @@ I created `docker-cheatsheet.md` organized by category:
 
 ---
 
+## Revisited Topics
+
+## CMD vs ENTRYPOINT
+
+These two tripped me up for a while. Here's how I think about them now:
+
+- `CMD` is the default command, and I can replace it just by adding a command to `docker run`.
+- `ENTRYPOINT` is the main executable, and it stays fixed unless I override it with `--entrypoint`.
+
+**How I remember it:** `ENTRYPOINT` is the program that always runs; `CMD` is its default arguments, 
+which I can swap out.
+
+```dockerfile
+ENTRYPOINT ["echo"]
+CMD ["hello"]
+```
+```
+docker run myimage           # prints: hello
+docker run myimage world     # prints: world
+```
+
+## Bind mounts
+
+A bind mount shares a folder from my computer directly into the container, so changes show up on both sides instantly.
+
+```
+docker run -v $(pwd):/app alpine ls /app   # mount current folder at /app
+```
+
+**How I remember it:** 
+I use bind mounts during development to share my source code and local files, 
+so I can edit on my machine and see the result in the container without rebuilding.
