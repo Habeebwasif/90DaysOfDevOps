@@ -38,7 +38,7 @@
 
 ## Compose commands
 
-- `docker compose up --pull always -d` — Build or start services in detached mode.
+- `docker compose up -d` — Build or start services in detached mode.
 - `docker compose down` — Stop and remove Compose containers and networks.
 - `docker compose ps` — List Compose service status.
 - `docker compose logs -f` — Follow Compose service logs.
