@@ -75,3 +75,20 @@ docker system df
 ```
 
 It helps us view info of image, container, volume, and build-cache usage.
+
+## Build Your Docker Cheat Sheet
+
+I created `docker-cheatsheet.md` organized by category:
+
+[View my-Docker-Cheat-Sheet](docker-cheatsheet.md)
+
+- **Container commands** — run, ps, stop, rm, exec, logs
+- **Image commands** — build, pull, push, tag, ls, rm
+- **Volume commands** — create, ls, inspect, rm
+- **Network commands** — create, ls, inspect, connect
+- **Compose commands** — up, down, ps, logs, build
+- **Cleanup commands** — prune, system df
+- **Dockerfile instructions** — FROM, RUN, COPY, WORKDIR, EXPOSE, CMD, ENTRYPOINT
+
+---
+
