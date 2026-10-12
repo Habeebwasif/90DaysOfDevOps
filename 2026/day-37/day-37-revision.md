@@ -9,14 +9,14 @@ Mark yourself honestly — **can do**, **shaky**, or **haven't done**:
 - [x] Explain Docker image layers and build cache
 - [x] Write a Dockerfile using `FROM`, `RUN`, `COPY`, `WORKDIR`, and `CMD`
 - [x] Explain the difference between `CMD` and `ENTRYPOINT`
-- [] Build and tag custom Docker images
-- [] Create and manage Docker volumes
-- [] Use bind mounts for local development
-- [] Create custom Docker networks and connect containers
-- [] Build multi-container applications with Docker Compose
-- [] Configure environment variables using `.env` files
-- [] Write multi-stage Dockerfiles
-- [] Push Docker images to Docker Hub
-- [] Configure health checks and service dependencies
+- [x] Build and tag custom Docker images
+- [x] Create and manage Docker volumes
+- [x] Use bind mounts for local development
+- [x] Create custom Docker networks and connect containers
+- [x] Build multi-container applications with Docker Compose
+- [x] Configure environment variables using `.env` files
+- [x] Write multi-stage Dockerfiles
+- [x] Push Docker images to Docker Hub
+- [x] Configure health checks and service dependencies
 
 ---
