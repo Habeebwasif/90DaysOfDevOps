@@ -1,0 +1,20 @@
+server:
+  name: web
+  ip: 192.168.1.10
+  port: 8080
+
+database:
+  host: mysql
+  name: app_db
+  credentials:
+    user: root
+    password: root123
+
+startup_script: |
+  echo "Starting"
+  cd /app
+  ./run.sh
+
+description: >
+  This server runs
+  the web app.
