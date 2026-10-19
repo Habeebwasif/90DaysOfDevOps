@@ -5,7 +5,7 @@
 2. Clone it locally
 3. Create the folder structure: `.github/workflows/`
 
-[GitHub-Actions-Repo](https://github.com/Habeebwasif/github-actions-practice/tree/main/.github/workflows)
+[My-GitHub-Actions-Repo](https://github.com/Habeebwasif/github-actions-practice/tree/main/.github/workflows)
 
 ---
 
