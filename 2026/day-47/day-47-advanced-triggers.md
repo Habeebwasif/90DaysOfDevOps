@@ -83,15 +83,15 @@ I opened a PR from a badly named branch (`test/pr-reopen`) with an empty descrip
 
 The `branch-name-check` failed with a clear error message:
 
-![Branch name check failing](Images/img2.png)
+![Branch name check failing](Images/img3.png)
 
 The empty description only produced a warning, so that job still passed:
 
-![PR body empty warning](Images/img3.png)
+![PR body empty warning](Images/img4.png)
 
 The file size check passed because no changed file exceeded 1 MB:
 
-![File size check](Images/img4.png)
+![File size check](Images/img2.png)
 
 Then I opened a PR from a correctly named branch (`feature/Valid-pr`) with a description. All three checks passed:
 
