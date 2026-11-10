@@ -137,6 +137,8 @@ File: [.github/workflows/main-pipeline.yml](https://github.com/Habeebwasif/githu
 
 ![snapshot](images/img10.png)
 
+![snapshot](images/img11.png)
+
 ### Task 6: Scheduled health check
 
 File: [.github/workflows/health-check.yml](https://github.com/Habeebwasif/github-actions-capstone/blob/main/.github/workflows/health-check.yml)
