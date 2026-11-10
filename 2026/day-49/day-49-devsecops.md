@@ -187,8 +187,7 @@ I added a second Trivy run that produces SARIF output, and uploaded it with `git
 ## Other problems I ran into
 
 - **`image_url` output skipped.** The Docker jobs warned "Skip output 'image_url' since it may contain secret". GitHub drops any job output that contains the value of a secret, and my Docker username was a secret. The deploy job then printed an empty image name. The username is public, so I changed it to a normal input in `reusable-docker.yml`. Only the token stays a secret. Anything passed through `secrets:` into a reusable workflow counts as a secret there, even if it comes from a variable, so passing it as an input was the fix.
-- **Missing input error.** After that change VS Code flagged "Input docker_username is required, but not provided". One of my two Docker jobs in `main-pipeline.yml` was missing the new line.
-- **Node.js 20 deprecation warning.** It comes from `actions/cache` used inside the Trivy action, not from my workflow. The scan still runs. It needs an upstream fix, and I'm keeping the action pinned instead of using `@master` to get rid of it.
+- **Node.js 20 deprecation warning.** It comes from `actions/cache` used inside the Trivy action, not from my workflow. The scan still runs. It needs an upstream fix, and I'm keeping the action pinned `v0.36.0` instead of using `@master` to get rid of it.
 
 ## What I learned
 
