@@ -1,7 +1,3 @@
-![PR Pipeline](https://github.com/Habeebwasif/github-actions-capstone/actions/workflows/pr-pipeline.yml/badge.svg)
-![Main Pipeline](https://github.com/Habeebwasif/github-actions-capstone/actions/workflows/main-pipeline.yml/badge.svg)
-![Health Check](https://github.com/Habeebwasif/github-actions-capstone/actions/workflows/health-check.yml/badge.svg)
-
 # GitHub Actions Capstone: End-to-End CI/CD Pipeline
 
 This is my Day 48 capstone for #90DaysOfDevOps. I took a full-stack notes app and built a complete CI/CD pipeline around it using only GitHub Actions: tests on every pull request, a Docker build and push on every merge to `main`, an approval-gated deploy, and a scheduled health check.
