@@ -222,7 +222,7 @@ RUN apk upgrade --no-cache
 
 After the rebuild, both `rescan` jobs went green.
 
-![Rescan failing on notes-frontend](images/day49-rescanfail.png)
+![Rescan failing on notes-frontend](images/day-49-rescanfail.png)
 ![Rescan passing on both images](images/day49-rescan-pass.png)
 ![Rescan passing on but skip deploy](images/day49-weekly-deploy-skip.png)
 
