@@ -184,6 +184,49 @@ I added a second Trivy run that produces SARIF output, and uploaded it with `git
 
 ![Trivy results in the Security tab](images/day49-security-tab.png)
 
+## Scheduled rescan and weekly rebuild (added after feedback on my LinkedIn post)
+
+After I posted this project, a commenter pointed out a gap: my Trivy scan only checks an image on the day it is built. New CVEs get published against images that passed earlier, and nothing in my pipeline would notice until I pushed new code. He suggested rescanning the latest images on the 12 hour job, and rebuilding weekly from the updated base image.
+
+I added both.
+
+**Rescan every 12 hours.** I added a `rescan` job to `health-check.yml`. It runs Trivy on `notes-api:latest` and `notes-frontend:latest` straight from Docker Hub, as a separate job from the health check so the two kinds of failure show up on their own. I used `ignore-unfixed` because this job runs forever, and a CVE with no patch available would keep it red with nothing I could do.
+
+```yaml
+  rescan:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [notes-api, notes-frontend]
+    steps:
+      - name: Scan latest ${{ matrix.image }} image
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          image-ref: docker.io/${{ vars.DOCKERHUB_USERNAME }}/${{ matrix.image }}:latest
+          format: 'table'
+          exit-code: '1'
+          severity: 'CRITICAL,HIGH'
+          ignore-unfixed: 'true'
+```
+
+**Weekly rebuild.** `main-pipeline.yml` now also runs every Monday at 03:00 UTC, and has a manual run button. A rebuild pulls the current base images and the latest OS fixes. It still goes through the tests and the Trivy gate before anything is pushed, and the `deploy` job only runs on a real push to `main`, so I'm not asked for approval every Monday.
+
+**What the first run found.** The rescan failed on `notes-frontend:latest`. It had passed the scan on the day it was built, but the image now had 3 HIGH vulnerabilities in `libxslt` (CVE-2026-125350, CVE-2026-87636 and CVE-2026-9947). The installed version was `1.1.43-r3` and the fixed one was `1.1.43-r4`.
+
+**The fix** was one line in the frontend Dockerfile, to patch the OS packages at build time:
+
+```dockerfile
+RUN apk upgrade --no-cache
+```
+
+After the rebuild, both `rescan` jobs went green.
+
+![Rescan failing on notes-frontend](images/day49-rescan-failed.png)
+![Rescan passing on both images](images/day49-rescan-passed.png)
+
+**What green means here:** no CRITICAL or HIGH findings that have a fix available. It does not mean zero vulnerabilities, because `ignore-unfixed` hides the ones nobody has patched yet.
+
 ## Other problems I ran into
 
 - **`image_url` output skipped.** The Docker jobs warned "Skip output 'image_url' since it may contain secret". GitHub drops any job output that contains the value of a secret, and my Docker username was a secret. The deploy job then printed an empty image name. The username is public, so I changed it to a normal input in `reusable-docker.yml`. Only the token stays a secret. Anything passed through `secrets:` into a reusable workflow counts as a secret there, even if it comes from a variable, so passing it as an input was the fix.
