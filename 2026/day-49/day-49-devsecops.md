@@ -222,8 +222,9 @@ RUN apk upgrade --no-cache
 
 After the rebuild, both `rescan` jobs went green.
 
-![Rescan failing on notes-frontend](images/day49-rescan-failed.png)
-![Rescan passing on both images](images/day49-rescan-passed.png)
+![Rescan failing on notes-frontend](images/day49-rescanfail.png)
+![Rescan passing on both images](images/day49-rescan-pass.png)
+![Rescan passing on both images](images/day49-weekly-deploy-skip.png)
 
 **What green means here:** no CRITICAL or HIGH findings that have a fix available. It does not mean zero vulnerabilities, because `ignore-unfixed` hides the ones nobody has patched yet.
 
