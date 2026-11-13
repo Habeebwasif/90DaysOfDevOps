@@ -101,8 +101,6 @@ kubectl get pods -n kube-system
 
 ![cluster-info, get nodes, describe node](images/02-cluster-info-describe-node.png)
 
-![namespaces and kube-system pods](images/03-namespaces-and-pods.png)
-
 Namespaces: `default`, `kube-node-lease`, `kube-public`, `kube-system`, `local-path-storage`.
 
 > Note: this screenshot was taken about 100 seconds after the cluster was created, so `coredns` was still `0/1` and `kube-proxy` showed `Error` while restarting. These settle once the node networking is ready.
@@ -128,6 +126,8 @@ kind delete cluster --name devops-cluster
 kind create cluster --name devops-cluster
 kubectl get nodes
 ```
+
+![namespaces and kube-system pods](images/03-namespaces-and-pods.png)
 
 The node showed `NotReady` just 6 seconds after recreation; it turns `Ready` once the kubelet and networking finish starting.
 
