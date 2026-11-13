@@ -141,6 +141,10 @@ kubectl config view
 
 Current context: `kind-devops-cluster` (another context, `kind-devboard`, also exists).
 
-**What is a kubeconfig?** A YAML file that stores cluster details, user credentials and contexts so `kubectl` knows which cluster to talk to.
+**What is a kubeconfig?**
 
-**Where is it stored?** By default at `~/.kube/config`.
+A YAML file that stores cluster details, user credentials and contexts so `kubectl` knows which cluster to talk to.
+
+**Where is it stored?** 
+
+By default at `~/.kube/config`.
