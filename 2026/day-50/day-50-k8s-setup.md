@@ -131,17 +131,15 @@ kubectl get nodes
 
 The node showed `NotReady` just 6 seconds after recreation; it turns `Ready` once the kubelet and networking finish starting.
 
-![delete and recreate cluster](images/04-cluster-lifecycle.png)
-
 ```bash
 kubectl config current-context
 kubectl config get-contexts
 kubectl config view
 ```
 
-Current context: `kind-devops-cluster` (another context, `kind-devboard`, also exists).
+![delete and recreate cluster](images/04-cluster-lifecycle.png)
 
-![kubectl config commands](screenshots/05-kubeconfig-contexts.png)
+Current context: `kind-devops-cluster` (another context, `kind-devboard`, also exists).
 
 **What is a kubeconfig?** A YAML file that stores cluster details, user credentials and contexts so `kubectl` knows which cluster to talk to.
 
