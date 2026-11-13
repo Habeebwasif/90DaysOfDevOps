@@ -16,7 +16,7 @@ The name is Greek for "helmsman/pilot"- a person who steers a ship.
 
 ## Task 2: Kubernetes Architecture
 
-![kubernetes architecture](images/01-architecture.png)
+![kubernetes architecture](images/01-architecture.jpg)
 
 The control plane (API Server, etcd, Scheduler, Controller Manager) decides and stores the cluster state, while worker nodes (kubelet, kube-proxy, container runtime) run the pods. `kubectl apply` goes to the API Server, is saved in etcd, the Scheduler picks a node and the kubelet starts the pod; if the API server is down you can't manage the cluster (running pods keep running), and if a worker node dies its pods are rescheduled onto other nodes.
 
@@ -99,9 +99,9 @@ kubectl get pods -A
 kubectl get pods -n kube-system
 ```
 
-![cluster-info, get nodes, describe node](screenshots/02-cluster-info-describe-node.png)
+![cluster-info, get nodes, describe node](images/02-cluster-info-describe-node.png)
 
-![namespaces and kube-system pods](screenshots/03-namespaces-and-pods.png)
+![namespaces and kube-system pods](images/03-namespaces-and-pods.png)
 
 Namespaces: `default`, `kube-node-lease`, `kube-public`, `kube-system`, `local-path-storage`.
 
@@ -131,7 +131,7 @@ kubectl get nodes
 
 The node showed `NotReady` just 6 seconds after recreation; it turns `Ready` once the kubelet and networking finish starting.
 
-![delete and recreate cluster](screenshots/04-cluster-lifecycle.png)
+![delete and recreate cluster](images/04-cluster-lifecycle.png)
 
 ```bash
 kubectl config current-context
