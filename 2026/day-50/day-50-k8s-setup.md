@@ -129,8 +129,6 @@ kubectl get nodes
 
 ![namespaces and kube-system pods](images/03-namespaces-and-pods.png)
 
-The node showed `NotReady` just 6 seconds after recreation; it turns `Ready` once the kubelet and networking finish starting.
-
 ```bash
 kubectl config current-context
 kubectl config get-contexts
